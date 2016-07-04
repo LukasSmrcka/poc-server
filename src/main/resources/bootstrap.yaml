@@ -1,0 +1,14 @@
+
+spring:
+  application:
+     name: poc-server
+  profiles:
+    #active: primary
+
+  cloud:
+    config:
+      uri: http://localhost:8002
+      # Application will not start without configuration server
+      failFast: true
+
+# The rest of configurations will be loaded from config server
